@@ -50,6 +50,13 @@
                     <option value="0">Inactive</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="status">Type</label>
+                <select class="form-control" name="type">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-block btn-danger">Create Product</button>
         </form>
     </div>

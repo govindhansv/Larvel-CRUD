@@ -20,6 +20,7 @@
 
                 <div class="card-body">
                 <a href="{{ url('/products') }}" class="btn btn-success">Products</a>
+                <a href="{{ url('/products/create') }}" class="btn btn-success">Create</a>
                 </div>
             </div>
         </div>

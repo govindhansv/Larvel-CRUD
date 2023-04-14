@@ -18,6 +18,7 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->string('image')->nullable();
             $table->boolean('status')->default(true);
+            $table->enum('type', ['pending','completed'])->default('pending');
             $table->timestamps();
         });
     }

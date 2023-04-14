@@ -38,6 +38,10 @@
               <input type="number" class="form-control" name="price" value="{{ $product->price }}"/>
           </div>
           <div class="form-group">
+              <label for="price">Price</label>
+              <input type="number" class="form-control" name="price" value="{{ $product->price }}"/>
+          </div>
+          <div class="form-group">
               <label for="image">Image</label>
               <input type="file" class="form-control" name="image" value="{{ $product->image }}"/>
           </div>
@@ -51,6 +55,14 @@
                 <option value="0" {{ $product->status == 0 ? 'selected' : '' }}>Inactive</option>
               </select>
           </div>
+          <div class="form-group">
+              <label for="type">Type</label>
+              <select class="form-control" name="type">
+                <option value="1" {{ $product->type == 1 ? 'selected' : '' }}> Active</option>
+                <option value="0" {{ $product->type == 0 ? 'selected' : '' }}> Inactive</option>
+              </select>
+          </div>
+    
           <button type="submit" class="btn btn-block btn-danger">Update Product</button>
       </form>
   </div>

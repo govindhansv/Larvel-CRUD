@@ -41,6 +41,7 @@ class ProductController extends Controller
             'price' => 'required',
             'image' => 'nullable|image',
             'status' => 'boolean',
+            'type' => 'boolean',
         ]);
         // $product = Product::create($storeData);
         $imageName = time() . '.' . $request->image->extension();
@@ -87,6 +88,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
+
     public function update(Request $request, string $id)
     {
         $product = Product::findOrFail($id);
@@ -101,6 +103,7 @@ class ProductController extends Controller
             'price' => 'required',
             'image' => 'nullable|image',
             'status' => 'boolean',
+            'type' => 'boolean'
         ]);
 
         

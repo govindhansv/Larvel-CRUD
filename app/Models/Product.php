@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {   
     use HasFactory;
-    protected $fillable = ['name', 'sku', 'price', 'image', 'status'];
+    protected $fillable = ['name', 'sku', 'price', 'image', 'status','type'];
 
     protected $casts = [
         'status' => 'boolean',
+        'type' => 'boolean',
     ];
 }
 
